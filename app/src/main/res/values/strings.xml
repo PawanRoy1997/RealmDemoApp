@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Login Application (Realm)</string>
+    <string name="user_hint">Username or Email</string>
+    <string name="password_hint">Password</string>
+    <string name="login_hint">Login</string>
+    <string name="register_hint">Register</string>
+</resources>
