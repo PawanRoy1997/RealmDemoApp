@@ -76,9 +76,8 @@ class MainActivity : AppCompatActivity() {
         if (!getPassword().isValidPassword()) {
             Toast.makeText(this, "Password is not Valid", Toast.LENGTH_LONG).show()
         }
-        val user = User()
-        user.name = getName()
-        user.password = getPassword()
+        val user = User(getName(),getPassword())
+
         realm.beginTransaction()
         realm.copyToRealm(user)
         realm.commitTransaction()
