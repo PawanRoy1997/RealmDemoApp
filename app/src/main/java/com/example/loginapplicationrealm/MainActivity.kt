@@ -41,6 +41,7 @@ class MainActivity : AppCompatActivity() {
         if (!getName().isValidUsername()) {
             Toast.makeText(this, "Username is not Valid", Toast.LENGTH_LONG).show()
         }
+
         if (!getPassword().isValidPassword()) {
             Toast.makeText(this, "Password is not Valid", Toast.LENGTH_LONG).show()
         } else if (name.isValidUsername() && password.isValidPassword()) {
